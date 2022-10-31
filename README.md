@@ -14,9 +14,9 @@ Sqlite, Python, Flask, Javascript, HTML/CSS, Bootstrap
 <h2>Setup</h2>
 <ul>
 	<li>Download the repository to your local machine</li>
-	<li>Open main.py</li>
+	<li>Open application.py</li>
 	<li>Make sure you have 
-		<a href="https://www.python.org/downloads/">python</a>(version > 3.0), 
+		<a href="https://www.python.org/downloads/">python</a> (version > 3.0), 
 		<a href="https://flask.palletsprojects.com/en/2.2.x/installation/">Flask</a>, 
 		<a href="https://www.tutorialspoint.com/sqlite/sqlite_installation.htm/">sqlite3</a> 
 	installed.
