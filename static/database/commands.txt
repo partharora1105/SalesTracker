@@ -1,0 +1,133 @@
+sqlite3 database.db
+
+DROP TABLE Products;
+CREATE TABLE Products(
+	ProductId         INTEGER PRIMARY KEY AUTOINCREMENT,
+	Name              TEXT,
+	Manufacturer      TEXT,
+	Style             TEXT,
+	PurchasePrice     INTEGER,
+	SalePrice         INTEGER,
+	QtyOnHand         TEXT,
+	CommissionPercent  INTEGER
+);
+
+INSERT INTO Products (ProductId, Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES(402134, 'Pedal', 'Hero Cycles', 'Red', '120', '210', '53','7');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Derailleur', 'Manga Parts', 'Medium', '100', '180', '78','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Chain', 'A-ONE Cycles', 'Metal', '96', '119', '109','3');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Brake', 'BMW Manuf', 'Safe', '89', '180', '98','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Seat Tube', 'Mega Mart', 'Round', '99', '119', '119','3');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Seat Stay', 'Polestar', 'Pink', '100', '180', '78','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Seat', 'Hero Cycles', 'Triangular', '89', '180', '98','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Crossbar', 'Manga Parts', 'Large', '489', '622', '45','10');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Tire', 'Polestar', 'Round', '48', '99', '200','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Derailleur', 'Manga Parts', 'Medium', '100', '180', '78','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Chain', 'A-ONE Cycles', 'Metal', '96', '119', '129','3');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Brake', 'BMW Manuf', 'Safe', '89', '180', '98','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Seat Tube', 'Mega Mart', 'Round', '99', '119', '139','3');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Seat Stay', 'Polestar', 'Pink', '100', '180', '78','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Seat', 'Hero Cycles', 'Triangular', '89', '180', '98','5');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Crossbar', 'Manga Parts', 'Large', '489', '622', '45','10');
+INSERT INTO Products (Name, Manufacturer, Style, PurchasePrice, SalePrice, QtyOnHand, CommissionPercent) VALUES('Tire', 'Polestar', 'Round', '48', '99', '200','5');
+
+DROP TABLE Salespersons;
+CREATE TABLE Salespersons(
+	SalespersonId     INTEGER PRIMARY KEY AUTOINCREMENT,
+	FirstName         TEXT,
+	LastName          TEXT,
+	Address           TEXT,
+	Phone             INTEGER,
+	StartDate         TEXT,
+	TerminationDate   TEXT,
+	Manager           TEXT
+);
+
+INSERT INTO Salespersons(SalespersonId, FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES(50734, 'John', 'Doe', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022', '10/30/2022','Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Jason', 'Doe', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Thomas', 'Ray', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Bryan', 'Larry', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Rajan Singh');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Sanya', 'Roy', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Rajan Singh');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Sarah', 'Thomson', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Lissa', 'Drew', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Bryan', 'Larry', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Rajan Singh');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Tim', 'Ray', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Rajan Singh');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Josh', 'Schilling', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Pasco', 'Gama', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Madison', 'Oven', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Rajan Singh');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Zhi', 'Lin', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Rajan Singh');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Lara', 'Hodgson', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Mark', 'Morrison', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Jon Womack');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, TerminationDate, Manager) VALUES('Alan', 'Waag', '237, Menlo Park, CA, 39402', '4707303228', '08/30/2002', '10/30/2022' ,'Rajan Singh');
+INSERT INTO Salespersons(FirstName, LastName, Address, Phone, StartDate, Manager) VALUES('Alexa', 'Roberts', '237, Marrieta, GA, 39402', '4107303228', '09/30/2010', 'Rajan Singh');
+
+DROP TABLE Customers;
+CREATE TABLE Customers(
+    CustomerId        INTEGER PRIMARY KEY AUTOINCREMENT,
+	FirstName         TEXT,
+	LastName          TEXT,
+	Address           TEXT,
+	Phone             INTEGER,
+	StartDate         TEXT
+);
+
+INSERT INTO Customers(CustomerId, FirstName, LastName, Address, Phone, StartDate) VALUES(60734, 'John', 'Doe', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('John', 'Doe', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Melissa', 'Heffner', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Sean', 'Henry', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Joe', 'Biden', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Kamla', 'Harris', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Donald', 'Trump', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Thad', 'Starner', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Joy', 'Harris', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Marry', 'Mcdaniel', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Ricky', 'Landry', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Hory', 'Borris', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Rishi', 'Sunak', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Vicky', 'Fowler', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Mohit', 'Pinninti', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Jack', 'English', '237, Mountain View, CA, 39402', '4707893228', '10/30/2022');
+INSERT INTO Customers(FirstName, LastName, Address, Phone, StartDate) VALUES('Parth', 'Arora', '345, Atlanta, GA, 30922', '9707553228', '09/08/2022');
+
+DROP TABLE Sales;
+CREATE TABLE Sales(
+	SaleId            INTEGER PRIMARY KEY AUTOINCREMENT,
+	ProductId         INTEGER,
+	SalesPersonId     INTEGER,
+	CustomerId        INTEGER,
+	StartDate         INTEGER
+);
+
+INSERT INTO Sales(SaleId, ProductId, SalesPersonId, CustomerId, StartDate) VALUES(73934,402139 ,50734 ,60740 , '10/30/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402136,50736 ,60734 , '01/22/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402134,50734 , 60734, '02/3/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402139,50739 , 60739, '04/22/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402143,50739 ,60737 , '05/30/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402139,50743 ,60740 , '06/22/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402136,50743 , 60736, '07/12/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402136,50736 ,60734 , '08/22/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402134,50734 , 60734, '09/30/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402139,50739 , 60739, '07/22/22');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402143,50739 ,60737 , '01/30/21');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402139,50743 ,60740 , '03/22/21');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402136,50743 , 60736, '05/12/21');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402136,50736 ,60734 , '07/22/21');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402134,50734 , 60734, '09/30/21');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES(402139,50739 , 60739, '11/22/21');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402143,50739 ,60737 , '12/30/21');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402139,50743 ,60740 , '08/22/19');
+INSERT INTO Sales(ProductId, SalesPersonId, CustomerId, StartDate) VALUES( 402136,50743 , 60736, '01/12/19');
+
+CREATE TABLE Discounts(
+	DiscountId        INTEGER PRIMARY KEY AUTOINCREMENT,
+	ProductId         INTEGER,
+	BeginDate         TEXT,
+	EndDate           TEXT,
+	DiscountPercent   INTEGER
+);
+
+INSERT INTO Discounts(DiscountId, ProductId, BeginDate, EndDate, DiscountPercent) VALUES(23956,402139 ,'10/20/2022', '10/30/2022', 50);
+INSERT INTO Discounts(ProductId, BeginDate, EndDate, DiscountPercent) VALUES(402137 ,'10/20/2022', '10/30/2022', 50);
+INSERT INTO Discounts(ProductId, BeginDate, EndDate, DiscountPercent) VALUES(402137 ,'12/20/2022', '12/30/2022', 40);
+INSERT INTO Discounts(ProductId, BeginDate, EndDate, DiscountPercent) VALUES(402140 ,'09/20/2022', '11/30/2022', 44);
+INSERT INTO Discounts(ProductId, BeginDate, EndDate, DiscountPercent) VALUES(402142 ,'10/20/2022', '10/30/2022', 2);
+

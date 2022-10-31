@@ -1,0 +1,115 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(199,16,168,1) 64%);
+    color: white;
+}
+
+/*Fonts*/
+.heading {
+    font-family: 'Archivo Black', sans-serif;
+}
+.sub-heading {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+.para {
+    font-family: 'Arimo', sans-serif;
+}
+
+.main {
+    height: 100vh;
+}
+.header {
+    height: 5%;
+    background-color: #020024;
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.content {
+    height: 95%;
+}
+.left-content {
+    background: rgba(2,0,36,0.2);
+    padding: 2% 4%;
+}
+.left-content h2 {
+    margin-top: 10%;
+}
+
+.sale-form label {
+    width: 100%;
+}
+.sale-form select{
+    background: rgba(0,0,0,0);
+    color: white;
+    border-color: rgba(255,255,255,0.4);
+    margin-bottom: 5%;
+    width: 100%;
+    padding: 2% 1%;
+}
+.data-explorer a{
+    width: inherit;
+}
+.data-explorer button{
+    margin-top: 10%;
+    border-radius: 10px;
+}
+.report button {
+    margin-top: 3%;
+    width: 100%;
+}
+.sales {
+    padding: 5% 8%;
+}
+.date-label{
+    width: 20%!important;
+}
+
+.date{
+    background: transparent;
+    border: none;
+    color: white;
+    width: 75%!important;
+}
+.date-submit {
+    float: right;
+}
+.rows-container {
+    max-height: 80%;
+    overflow-y: scroll;
+    background: rgba(2,0,36,0.2);
+    padding: 2% 0;
+    border-radius: 10px;
+}
+
+.sales-row{
+    margin-top: 1%;
+    margin-left: 0;
+}
+.edit-form {
+    padding: 5% 8%;
+}
+.input-text {
+    width: 80%;
+    background: transparent;
+    border:none;
+    border-bottom: white solid 1px;
+    color: white;
+}
+.edit-button {
+    float: right;
+    margin-top: 5%;
+}
+.edit-form label {
+    width: 20%;
+}
+@media only screen and (max-width: 767px) {
+    .content{
+        overflow-y: scroll;
+    }
+}
+
+
+
